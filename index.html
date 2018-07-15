@@ -25,6 +25,7 @@
 <p>
     Dose interval?<br></br>
     <select>
+        <option value="select">Select</option> 
         <option value="three_min">3 Minutes</option>
         <option value="four_min">4 Minutes</option>
         <option value="five_min">5 Minutes</option>
@@ -66,8 +67,10 @@
 <p>
         Static position interval?<br></br>
         <select>
+            <option value="select">Select</option>   
             <option value="five_min">5 Minutes</option>
             <option value="ten_min">10 Minutes</option>
+            <option value="fifteen_min">15 Minutes</option>
             <option value="tbd">TBD</option>
         </select>
         <br></br>
@@ -75,6 +78,7 @@
 <p>
         Types of pulmonary function test to be performed?<br></br>
         <select>
+            <option value="select">Select</option> 
             <option value="forced_volume">FVC/FVL</option>
             <option value="diffusion_capacity">DLCO</option>
             <option value="tbd">TBD</option>
@@ -98,6 +102,8 @@
         Date of last OPV: <input type="text" name="last_OPV" placeholder="Example: 01JUL2020" required><br></br>
 </P>
 <p>
+        <input type="reset" value="Reset"><br></br>
+        <button type="button" onclick="save">Save</button><br></br>
         <input type="submit" value="Submit"><br></br>
 </p>
     </form>
