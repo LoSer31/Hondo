@@ -34,10 +34,10 @@
     <br></br>
 </p>
 <p>
-        <input type="text" placeholder="Trial Duration" required><button type="submit">Submit</button><br></br>
-        <input type="text" placeholder="Clinic Stay Duration" required><button type="submit">Submit</button><br></br>
-        <input type="text" placeholder="# of Subjects to Dose" required><button type="submit">Submit</button><br></br>
-        <input type="text" placeholder="# of Subjects to Check-In" required><button type="submit">Submit</button><br></br>
+        Study trail duration: <input type="text" name="trial_duration" placeholder="Example: 45 days" required><br></br>
+        In-house CRU stay duration: <input type="text" name="cru_duration" placeholder="Example: 14 days" required><br></br>
+        Number of Subjects to dose: <input type="text" name="subjects_to_dose" placeholder="Example: 12" required><br></br>
+        Number of Subjects to check-in: <input type="text" name="subjects_to_checkin" placeholder="Example: 18" required><br></br>
 </p>
 <p>
         Events to be performed?<br></br>
@@ -82,7 +82,7 @@
         <br></br>
 </p>
 <p>
-        <input type="text" placeholder="Total # of Blood Collections" required><button type="submit">Submit</button><br></br>
+        Total Number of blood sample collections: <input type="text" name="total_number_blood_samples"placeholder="Example: 75" required><br></br>
 </p>
 <p>
         Last blood sample to be collected before discharge from CRU?<br></br>
@@ -95,8 +95,11 @@
         <br></br>
 </p>
 <P>
-        <input type="text" placeholder="Date of Last OPV" required><button type="submit">Submit</button><br></br>
+        Date of last OPV: <input type="text" name="last_OPV" placeholder="Example: 01JUL2020" required><br></br>
 </P>
+<p>
+        <input type="submit" value="Submit"><br></br>
+</p>
     </form>
 
 </body>
