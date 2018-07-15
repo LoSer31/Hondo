@@ -1,1 +1,102 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Staffman</title>
+</head>
+<h1> Project Staff Management</h1>
+<body>
+<p>
+    <form action="/submit_trial_data">
+        Type of study?<br></br>
+        <label><input type="radio" name="study_type"> First In Human</label><br>
+        <label><input type="radio" name="study_type"> Bioavailability</label><br>
+        <label><input type="radio" name="study_type"> TQT</label><br>
+        <label><input type="radio" name="study_type"> Smoking</label><br>
+        <label><input type="radio" name="study_type"> Optic</label><br></br>   
+</p>
+<p>
+        Type of dose administration?<br></br>
+        <label><input type="radio" name="dose_type"> Oral</label><br>
+        <label><input type="radio" name="dose_type"> Subcutaneous</label><br>
+        <label><input type="radio" name="dose_type"> Intramuscular</label><br>
+        <label><input type="radio" name="dose_type"> Intravenous</label><br>
+        <label><input type="radio" name="dose_type"> Smoking</label><br></br>   
+</p>
+<p>
+    Dose interval?<br></br>
+    <select>
+        <option value="three_min">3 Minutes</option>
+        <option value="four_min">4 Minutes</option>
+        <option value="five_min">5 Minutes</option>
+        <option value="ten_min">10 Minutes</option>
+        <option value="tbd">TBD</option>
+    </select>
+    <br></br>
+</p>
+<p>
+        <input type="text" placeholder="Trial Duration" required><button type="submit">Submit</button><br></br>
+        <input type="text" placeholder="Clinic Stay Duration" required><button type="submit">Submit</button><br></br>
+        <input type="text" placeholder="# of Subjects to Dose" required><button type="submit">Submit</button><br></br>
+        <input type="text" placeholder="# of Subjects to Check-In" required><button type="submit">Submit</button><br></br>
+</p>
+<p>
+        Events to be performed?<br></br>
+        <label><input type="checkbox" name="events"> Height</label><br>
+        <label><input type="checkbox" name="events"> Weight</label><br>
+        <label><input type="checkbox" name="events"> BMI</label><br>
+        <label><input type="checkbox" name="events"> UA</label><br>
+        <label><input type="checkbox" name="events"> UDS</label><br>
+        <label><input type="checkbox" name="events"> Urine PD</label><br>
+        <label><input type="checkbox" name="events"> Pooled Urine</label><br>
+        <label><input type="checkbox" name="events"> Alcohol Breath Test</label><br>
+        <label><input type="checkbox" name="events"> Blood Glucose (RMG)</label><br>
+        <label><input type="checkbox" name="events"> Blood Safety Samples</label><br>
+        <label><input type="checkbox" name="events"> Blood PK/PD Samples</label><br>
+        <label><input type="checkbox" name="events"> Blood Arterial Samples</label><br>
+        <label><input type="checkbox" name="events"> ECG</label><br>
+        <label><input type="checkbox" name="events"> Continuous ECG Monitoring</label><br>
+        <label><input type="checkbox" name="events"> Telemetry</label><br>
+        <label><input type="checkbox" name="events"> Vital Signs Supine</label><br>
+        <label><input type="checkbox" name="events"> Vital Signs Seated</label><br>
+        <label><input type="checkbox" name="events"> Vital Signs Orthostatic</label><br>
+        <label><input type="checkbox" name="events"> Respirations</label><br>
+        <label><input type="checkbox" name="events"> Temperature</label><br>
+        <label><input type="checkbox" name="events"> Pulmonary Function Tests</label><br></br>
+</p>
+<p>
+        Static position interval?<br></br>
+        <select>
+            <option value="five_min">5 Minutes</option>
+            <option value="ten_min">10 Minutes</option>
+            <option value="tbd">TBD</option>
+        </select>
+        <br></br>
+</p>
+<p>
+        Types of pulmonary function test to be performed?<br></br>
+        <select>
+            <option value="forced_volume">FVC/FVL</option>
+            <option value="diffusion_capacity">DLCO</option>
+            <option value="tbd">TBD</option>
+        </select>
+        <br></br>
+</p>
+<p>
+        <input type="text" placeholder="Total # of Blood Collections" required><button type="submit">Submit</button><br></br>
+</p>
+<p>
+        Last blood sample to be collected before discharge from CRU?<br></br>
+        <select>
+            <option value="twentyfour_hours">24 HRS</option>
+            <option value="thirtysix_hours">36 HRS</option>
+            <option value="fortyeight_hours">48 HRS</option>
+            <option value="seventytwo_hours">72 HRS</option>
+        </select>
+        <br></br>
+</p>
+    </form>
+
+
+</body>
+
+</html>
