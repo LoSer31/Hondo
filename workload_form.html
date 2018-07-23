@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Staffman</title>
+<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<h1> Project Staff Management</h1>
+<body>
+<p>
+    <form action="/submit_trial_data">
+        Type of study?<br></br>
+        <label><input type="radio" name="studyType"> First In Human</label><br>
+        <label><input type="radio" name="studyType"> Bioavailability</label><br>
+        <label><input type="radio" name="studyType"> TQT</label><br>
+        <label><input type="radio" name="studyType"> Smoking</label><br>
+        <label><input type="radio" name="studyType"> Optic</label><br></br>   
+</p>
+<p>
+        Type of dose administration?<br></br>
+        <label><input type="radio" name="doseType"> Oral</label><br>
+        <label><input type="radio" name="doseType"> Subcutaneous</label><br>
+        <label><input type="radio" name="doseType"> Intramuscular</label><br>
+        <label><input type="radio" name="doseType"> Intravenous</label><br>
+        <label><input type="radio" name="doseType"> Smoking</label><br></br>   
+</p>
+<p>
+    Dose interval?<br></br>
+    <select name= "doseInterval">
+        <option value="select">Select</option> 
+        <option value="threeMin">3 Minutes</option>
+        <option value="fourMin">4 Minutes</option>
+        <option value="fiveMin">5 Minutes</option>
+        <option value="tenMin">10 Minutes</option>
+        <option value="tbd">TBD</option>
+    </select>
+    <br></br>
+</p>
+<p>
+        Study trail duration: <input type="text" name="trialDuration" placeholder="Example: 45 days" required><br></br>
+        In-house CRU stay duration: <input type="text" name="cruDuration" placeholder="Example: 14 days" required><br></br>
+        Number of Subjects to dose: <input type="text" name="subjectsToDose" placeholder="Example: 12" required><br></br>
+        Number of Subjects to check-in: <input type="text" name="subjectsToCheckin" placeholder="Example: 18" required><br></br>
+</p>
+<p>
+        Events to be performed?<br></br>
+        <label><input type="checkbox" name="eventsHeight"> Height</label><br>
+        <label><input type="checkbox" name="eventsWeight"> Weight</label><br>
+        <label><input type="checkbox" name="eventsBmi"> BMI</label><br>
+        <label><input type="checkbox" name="eventsUa"> UA</label><br>
+        <label><input type="checkbox" name="eventsUds"> UDS</label><br>
+        <label><input type="checkbox" name="eventsUrinePd"> Urine PD</label><br>
+        <label><input type="checkbox" name="eventsPooledUrine"> Pooled Urine</label><br>
+        <label><input type="checkbox" name="eventsAlcoholBreathTest"> Alcohol Breath Test</label><br>
+        <label><input type="checkbox" name="eventsBloodGlucoseRmg"> Blood Glucose (RMG)</label><br>
+        <label><input type="checkbox" name="eventsBloodSafetySamples"> Blood Safety Samples</label><br>
+        <label><input type="checkbox" name="eventsBloodPkPdSamples"> Blood PK/PD Samples</label><br>
+        <label><input type="checkbox" name="eventsBloodArterialSamples"> Blood Arterial Samples</label><br>
+        <label><input type="checkbox" name="eventsEcg"> ECG</label><br>
+        <label><input type="checkbox" name="eventsContinousEcgMonitoring"> Continuous ECG Monitoring</label><br>
+        <label><input type="checkbox" name="eventsTelemetry"> Telemetry</label><br>
+        <label><input type="checkbox" name="eventsVitalSignsSupine"> Vital Signs Supine</label><br>
+        <label><input type="checkbox" name="eventsVitalSignsSeated"> Vital Signs Seated</label><br>
+        <label><input type="checkbox" name="eventsVitalSignsOrthostatic"> Vital Signs Orthostatic</label><br>
+        <label><input type="checkbox" name="eventsRespirations"> Respirations</label><br>
+        <label><input type="checkbox" name="eventsTemperature"> Temperature</label><br>
+        <label><input type="checkbox" name="eventsPulmonaryFunctionTests"> Pulmonary Function Tests</label><br></br>
+</p>
+<p>
+        Static position interval?<br></br>
+        <select name= "positionInterval">
+            <option value="select">Select</option>   
+            <option value="fiveMin">5 Minutes</option>
+            <option value="tenMin">10 Minutes</option>
+            <option value="fifteenMin">15 Minutes</option>
+            <option value="tbd">TBD</option>
+        </select>
+        <br></br>
+</p>
+<p>
+        Types of pulmonary function test to be performed?<br></br>
+        <select name= "pulmonaryFunction">
+            <option value="select">Select</option> 
+            <option value="forcedVolume">FVC/FVL</option>
+            <option value="diffusionCapacity">DLCO</option>
+            <option value="tbd">TBD</option>
+        </select>
+        <br></br>
+</p>
+<p>
+        Total Number of blood sample collections: <input type="text" name="totalNumberBloodSamples"placeholder="Example: 75" required><br></br>
+</p>
+<p>
+        Last blood sample to be collected before discharge from CRU?<br></br>
+        <select name= "dischargeCollection">
+            <option value="select">Select</option>
+            <option value="twentyFourHours">24 HRS</option>
+            <option value="thirtySixHours">36 HRS</option>
+            <option value="fortyEightHours">48 HRS</option>
+            <option value="seventyTwoHours">72 HRS</option>
+        </select>
+        <br></br>
+</p>
+<P>
+        Date of last OPV: <input type="text" name="lastOpv" placeholder="Example: 01JUL2020" required><br></br>
+</P>
+<p>
+        <input type="reset" value="Reset"><br></br>
+        <button type="button" onclick="save">Save</button><br></br>
+</p>
+    </form>
+
+</body>
+
+</html>
