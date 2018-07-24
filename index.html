@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Project Staffman</title>
-<link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>Project Staffman</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script lang="javascript" src="script/app.js"></script>
 </head>
-<h1> Project Staff Management</h1>
-<body>
-        <a href="workload_form.html">create workload assessment</a>
-</body>
-
+<h1>Create Project Staff Management</h1>
+<body onload="updateAssementTable()">
+   <a href="workload_form.html">Create New Workload Assessment</a><br><br>
+   Assessments<br>
+   <table id="assessmentTable">
+       <tr>
+           <th>Study<br>Type</th>
+           <th>Dose<br>Interval</th>
+           <th>Event<br>Height</th>
+           <th>CRU<br>Duration</th>
+        </tr>
+   </table>
+</body>        
 </html>
